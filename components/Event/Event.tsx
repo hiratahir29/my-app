@@ -1,4 +1,5 @@
 // components/EventCard.jsx
+import Link from 'next/link';
 import styles from './Event.module.css';
 
 export default function Event(props: any) {
@@ -10,6 +11,7 @@ export default function Event(props: any) {
         <h1 className={styles.name}>Event Name: {props.name}</h1>
         <p className={styles.description}>Event Description: {props.description}</p>
         <strong className={styles.date}>Event Date: {props.date}</strong>
+        <Link href={`/details/${props.id}`}><button>Explore Event</button></Link>
       </div>
     </div>
   );
