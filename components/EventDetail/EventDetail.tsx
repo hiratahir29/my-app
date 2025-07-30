@@ -11,7 +11,7 @@ export default function EventDetail({ name, description, date, image }: any) {
       <div className={styles.content}>
         <h1 className={styles.name}>{name}</h1>
         <p className={styles.description}>{description}</p>
-        <p className={styles.date}>Event Date: {date}</p>
+        <p className={styles.date}>Event Datee: {date}</p>
       </div>
     </div>
   );
