@@ -54,3 +54,9 @@ export const eventsData = [
 export const getEventById = (id: any) => {
    return eventsData.find(obj => obj.id === id)
 }
+
+
+export const getfilteredEvents = (year: any, month: any) => eventsData.filter(event => {
+        const [,m,y] = event.date.split('-');
+        return Boolean(y===year && m === month)
+    })
